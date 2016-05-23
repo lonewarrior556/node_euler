@@ -1,0 +1,18 @@
+{
+  "name": "euler82",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "code.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "noe"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "me",
+  "license": "ISC"
+}
