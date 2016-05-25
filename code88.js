@@ -1,8 +1,6 @@
 var _ = require('underscore')
 
-function sortNum(a,b) { return b - a; }
 var add = function(a,b){return parseInt(a)+parseInt(b)};
-var prod = function(a,b){return a*b};
 var p = require('./primes');
 var primes = {};
 p.map(function(a){primes[a]=true})
@@ -42,11 +40,8 @@ function allFactors(n){
   return factors
 }
 
-
-
 var k = {2:4};
 for (var i = 4; i <100000; i++) {
-  console.log(i)
  var vals = allFactors(i).map(function(a){return a.length - a.reduce(add) + i; })
  for (var j = 0; j < vals.length; j++) {
    if( (k[vals[j]]||Infinity) > i){
